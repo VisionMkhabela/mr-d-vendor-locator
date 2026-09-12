@@ -1,0 +1,67 @@
+{
+  "vendors": [
+    {
+      "id": "ven-001",
+      "name": "Mr D Pizza — Cape Town CBD",
+      "address": "12 Loop St, Cape Town, 8000",
+      "coordinate": { "lat": -33.918861, "lng": 18.423300 },
+      "isFavorite": false,
+      "updatedAt": "2025-06-01T12:00:00Z"
+    },
+    {
+      "id": "ven-002",
+      "name": "Mr D Burgers — V&A Waterfront",
+      "address": "Dock Rd, V&A Waterfront, Cape Town, 8001",
+      "coordinate": { "lat": -33.903691, "lng": 18.420406 },
+      "isFavorite": true,
+      "updatedAt": "2025-06-02T09:30:00Z"
+    },
+    {
+      "id": "ven-003",
+      "name": "Mr D Chicken — Sea Point",
+      "address": "210 Main Rd, Sea Point, Cape Town, 8005",
+      "coordinate": { "lat": -33.921461, "lng": 18.387548 },
+      "isFavorite": false,
+      "updatedAt": "2025-06-03T14:15:00Z"
+    },
+    {
+      "id": "ven-004",
+      "name": "Mr D Sushi — Claremont",
+      "address": "Cavendish Square, Claremont, Cape Town, 7708",
+      "coordinate": { "lat": -33.980430, "lng": 18.464780 },
+      "isFavorite": false,
+      "updatedAt": "2025-06-04T08:00:00Z"
+    },
+    {
+      "id": "ven-005",
+      "name": "Mr D Grill — Stellenbosch",
+      "address": "21 Church St, Stellenbosch, 7600",
+      "coordinate": { "lat": -33.937480, "lng": 18.863220 },
+      "isFavorite": false,
+      "updatedAt": "2025-06-05T11:45:00Z"
+    },
+    {
+      "id": "ven-006",
+      "name": "Mr D Pizza — Sandton",
+      "address": "83 Alice Ln, Sandhurst, Sandton, 2196",
+      "coordinate": { "lat": -26.107567, "lng": 28.056702 },
+      "isFavorite": false,
+      "updatedAt": "2025-06-06T16:20:00Z"
+    },
+    {
+      "id": "ven-007",
+      "name": "Mr D Burgers — Durban North",
+      "address": "16 Kenneth Kaunda Rd, Durban North, 4051",
+      "coordinate": { "lat": -29.786390, "lng": 31.037780 },
+      "isFavorite": false,
+      "updatedAt": "2025-06-07T10:10:00Z"
+    },
+    {
+      "id": "ven-008",
+      "name": "Mr D Express — Woodstock Kitchen",
+      "address": "66 Albert Rd, Woodstock, Cape Town, 7925",
+      "isFavorite": false,
+      "updatedAt": "2025-06-08T13:00:00Z"
+    }
+  ]
+}
