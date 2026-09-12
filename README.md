@@ -48,7 +48,7 @@ One vendor (`Mr D Express — Woodstock Kitchen`) has no coordinates on purpose,
 xcodebuild test -scheme MrDVendorLocator -destination 'platform=iOS Simulator,name=iPhone 16,OS=18.1'
 ```
 
-Or **Product → Test** in Xcode. The focused tests cover vendor JSON decoding and list ViewModel load / favorite / error behavior.
+Or **Product → Test** in Xcode. The focused tests cover vendor JSON decoding, list/settings/search ViewModels, networking, Keychain, and Places.
 
 ## Architecture
 
