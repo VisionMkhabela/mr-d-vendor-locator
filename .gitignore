@@ -1,3 +1,6 @@
+# Secrets — never commit API keys
+MrDVendorLocator/App/Secrets.swift
+
 # Xcode
 DerivedData/
 build/

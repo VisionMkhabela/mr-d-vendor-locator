@@ -70,7 +70,7 @@ Live path (`GooglePlacesSearchService`):
 3. `GMSFetchPlaceRequest` → `fetchPlace` for name, address, coordinates.
 4. Callbacks wrapped in `async/await` so the rest of the app never sees Google’s completion handlers.
 
-If a key is not ready, mock responses keep the same `PlaceResult` shape. Swap is one factory line; no ViewModel changes. Enable **Places API** and **Maps SDK for iOS** on the key, paste it into `AppConfig.swift`, rebuild.
+If a key is not ready, mock responses keep the same `PlaceResult` shape. Swap is one factory line; no ViewModel changes. Enable **Places API** and **Maps SDK for iOS** on the key, put it in gitignored `Secrets.swift` (from `Secrets.example.swift`), rebuild.
 
 Vendors without coordinates (Woodstock in the sample) stay on the list and are skipped on the map. Address-to-coordinates was the other allowed enhancement; it was left out on purpose so the delivery stays focused.
 

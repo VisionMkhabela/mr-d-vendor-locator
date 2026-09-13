@@ -11,11 +11,13 @@ SwiftUI take-home: discover nearby vendors, plot them on Google Maps, and store 
 ## Run locally
 
 1. Open `MrDVendorLocator.xcodeproj` in Xcode.
-2. Paste your Google API key into `MrDVendorLocator/App/AppConfig.swift`:
+2. Copy the secrets template and paste your Google API key:
 
-```swift
-static let googleMapsAPIKey = "YOUR_REAL_KEY"
+```bash
+cp Secrets.example.swift MrDVendorLocator/App/Secrets.swift
 ```
+
+Then set `Secrets.googleMapsAPIKey` in that file. `Secrets.swift` is gitignored and will not be pushed.
 
 3. Select an iPhone simulator and press **Run**.
 
@@ -28,7 +30,7 @@ In [Google Cloud Console](https://console.cloud.google.com/):
 1. Create a project and enable billing.
 2. Enable **Maps SDK for iOS** and **Places API** (New or legacy).
 3. Create an iOS API key and restrict it to `com.offerzen.MrDVendorLocator`.
-4. Put the key in `AppConfig.swift` and rebuild.
+4. Copy `Secrets.example.swift` to `MrDVendorLocator/App/Secrets.swift`, paste the key, and rebuild.
 
 `AppFactory` then wires `GooglePlacesSearchService` instead of `MockPlacesSearchService`.
 
@@ -53,13 +55,3 @@ Or **Product → Test** in Xcode. The focused tests cover vendor JSON decoding, 
 ## Architecture
 
 Composition root (`AppFactory`) injects protocols into MVVM screens. `AppCoordinator` owns tabs, selected vendor, and the place-search sheet. Networking is a tiny REST client backed by bundled JSON. Details and trade-offs are in [SOLUTION.md](SOLUTION.md).
-
-## Loom demo script (5–10 min)
-
-1. Launch, show vendor list loading from JSON, favorite toggle, pull to refresh.
-2. Switch to dark mode, then back.
-3. Tap a vendor → map recenters; tap a marker → card updates.
-4. Search “Kloof”, add a place, show the new marker.
-5. Settings: load demo token, show Keychain save/clear.
-6. Xcode: walk `AppFactory` → coordinator → `VendorListViewModel` → `LocalJSONHTTPClient` → `KeychainTokenStore` → `PlacesSearching`.
-7. Run the unit tests. Mention Places mock vs live key.
